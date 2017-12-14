@@ -19,8 +19,7 @@ void joyHandler(u16 joy, u16 changed, u16 state) {
     return;
   }
 
-  // Move the string around on the screen with gamepad input while ensuring
-  // the current position is always visible.
+  // Proceed to the next slide on pressing A
   if (state & BUTTON_A) {
     next = 1;
   }
